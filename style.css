@@ -1,0 +1,158 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+    background-color: #e9ecef;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  /* Layout principal */
+  .container {
+    display: flex;
+    height: calc(100vh - 80px);
+  }
+  
+  /* Sidebar - Fila */
+  .sidebar {
+    width: 20%;
+    background-color: #fff;
+    border-right: 2px solid #ccc;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sidebar h2 {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  #addBtn {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  #addBtn:hover {
+    background-color: #333;
+  }
+  
+  /* Lista de personagens */
+  #queueList {
+    overflow-y: auto;
+    width: 100%;
+    height: 400px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .queue .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .queue img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: #ccc;
+  }
+  
+  .queue span {
+    margin-top: 5px;
+    font-size: 0.9rem;
+  }
+  
+  /* consultorio */
+  .personagem {
+    flex: 1;
+    background-color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .personagem h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  #currentCharacter {
+    background-color: #ddd;
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #currentCharacter img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 12px;
+  }
+  
+  #currentCharacter p,
+  #currentCharacter strong {
+    font-size: 1rem;
+  }
+  
+  .descricao {
+    margin: 10px 0 20px;
+  }
+  
+  .descricao ul {
+    list-style-type: disc;
+    text-align: left;
+    padding-left: 40px;
+  }
+  
+  .button {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .button button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button button:hover {
+    background-color: #333;
+  }
